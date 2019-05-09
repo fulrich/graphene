@@ -6,6 +6,12 @@ scala:
 jdk:
   - oraclejdk8
 
+env:
+  - JOB=Test
+
+script:
+  - sbt ++$TRAVIS_SCALA_VERSION test
+
 stages:
   - name: compile
   - name: test
