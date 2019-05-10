@@ -9,18 +9,11 @@ env:
   - JOB=Test
 
 script:
-  - sbt ++$TRAVIS_SCALA_VERSION test
+  - sbt clean compile test
 
 stages:
   - name: compile
   - name: test
-
-jobs:
-  include:
-    - stage: compile
-      env:
-        - JOB=COMPILE
-      script: sbt clean compile
 
 cache:
   directories:
