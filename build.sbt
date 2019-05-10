@@ -1,6 +1,6 @@
 // Project Properties
 name := "Graphene"
-crossScalaVersions := Seq("2.11.12", "2.12.8")
+scalaVersion := "2.11.12"
 
 // Dependencies
 libraryDependencies ++= Seq(
